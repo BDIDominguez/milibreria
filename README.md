@@ -1,13 +1,17 @@
 # milibreria
 
 
-Esta pequeña app es para responder al reto de el curso de Alura Latan y Oracle en el curso de programador BackEnd. el mismo consiste en demostrar que se aprendieron los conceptos y poder crear una app que consumo desde una API en este caso: https://gutendex.com/. esto hace lo sigueinte:
-- Permite al usaurio consultar libros por titulos y todos los que concuerden con el criterio de buesqueda es guardado en la base de dato.
-- Brinda una lista de todos los Libros existentes en la base de datos.
-- Lista todos los Autores de los libros que se hayan consultado.
-- consultar autores por fecha de fallecimineto y otros.
+En esta pequeña app que es para responder al reto del curso de Alura Latan y Oracle en el curso de programador BackEnd. Esta consiste en demostrar que se aprendieron los conceptos y poder crear una app que consuma desde una API en este caso de https://gutendex.com/.
 
-El mismo funciona con un menu de texto muy rudimentario, pero funcional. el mismo controla algunos posibles errores de datos mal ingresados asi como sus validaciones y control del mismo.
+Hace lo siguiente:
+
+- Permite al usuario consultar libros por títulos y todos los registros que concuerden con el criterio de búsqueda están guardados en la base de dato.
+- Brinda una lista de todos los libros existentes en la base de datos.
+- Lista de todos los autores de los libros que se hayan consultado.
+- consultar autores por fecha de fallecimiento y otros.
+
+
+El mismo funciona con un menú de texto muy rudimentario, pero funcional. el mismo controla algunos posibles errores de datos mal ingresados, así como sus validaciones y control del mismo.
 
 La estructura de las clases usadas es la siguiente:
 
@@ -26,7 +30,7 @@ La estructura de las clases usadas es la siguiente:
         private Autor autor;
     }
 
-dependencias usadas en este proyecto:
+Dependencias usadas en este proyecto:
 
         <dependency>
 			<groupId>org.springframework.boot</groupId>
