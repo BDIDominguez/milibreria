@@ -1,23 +1,23 @@
 package com.MiLibreria.Practicas.apis;
 
-import java.io.IOException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import java.net.URI;
 import java.net.URLEncoder;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
-import java.time.Duration;
 
+@Service
 public class Gutendex {
     private static final String BASE_URL = "https://gutendex.com/books/";
     private final HttpClient httpClient;
 
-    public Gutendex(){
-        this.httpClient = HttpClient.newBuilder()
-                .version(HttpClient.newHttpClient().version().HTTP_2)
-                .connectTimeout(Duration.ofSeconds(10))
-                .build();
+    @Autowired
+    public Gutendex(HttpClient httpClient){
+        this.httpClient = httpClient;
     }
 
     public String buscarTitulo(String titulo) throws Exception {
